@@ -1,0 +1,36 @@
+{
+  "name": "gulp-browserify-setup",
+  "version": "1.0.0",
+  "description": "Simple gulp workflow for using JS with browserify, with a few basic use cases set up in it",
+  "author": "Maxwell Antonucci <maxx1128@gmail.com>",
+  "keywords": [
+    "gulp",
+    "front-end",
+    "boilerplate",
+    "Javascript",
+    "browserify",
+    "modules"
+  ],
+  "dependencies": {
+    "browsernizr": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "jquery": "^2.2.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "license": "MIT"
+}
