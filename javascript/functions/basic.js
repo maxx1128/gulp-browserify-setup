@@ -1,6 +1,5 @@
 var
-  $ = require('jquery'),
-  _ = require('lodash')
+  $ = require('jquery')
 ;
 
 exports.multiply = function(x, y) {
@@ -23,7 +22,7 @@ exports.component_init = function(selector, component_function) {
     
     if ( typeof id === typeof undefined && id !== false ) {
       
-      id = 'IDUNIQUE_' + _.random(99999999999999999);
+      id = 'IDUNIQUE_' + Math.floor((Math.random() * 99999999999999999) + 1);;
       $(this).attr('id', id);
     }
     

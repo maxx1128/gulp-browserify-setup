@@ -1,11 +1,9 @@
-// Basic functions - Add one to generate a random unique ID?
-// Add babel?
+// Minify final output!
 // Include tests?
 
 // Major dependencies
 var 
   $         = require('jquery'),
-  _         = require('lodash'),
   f         = require('./functions/basic'),
   component = require('./functions/component')
 ;

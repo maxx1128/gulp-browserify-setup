@@ -10,7 +10,9 @@ function containerized_component(patternId) {
 
   
   // What to do when the page loads
-  function init() {}
+  function init() {
+    pattern.text('It\'s working like it should!');
+  }
 
   function setEvents() {}
 
