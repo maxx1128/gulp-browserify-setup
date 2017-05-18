@@ -1,3 +1,8 @@
+var
+  $ = require('jquery'),
+  _ = require('lodash')
+;
+
 exports.multiply = function(x, y) {
   return x * y;
 }
@@ -9,4 +14,19 @@ exports.secrify = function(x, y) {
       rounded = Math.round(result);
   
   return rounded;
+}
+
+exports.component_init = function(selector, component_function) {
+  $(selector).each(function(){
+
+    var id = $(this).attr('id');
+    
+    if ( typeof id === typeof undefined && id !== false ) {
+      
+      id = 'IDUNIQUE_' + _.random(99999999999999999);
+      $(this).attr('id', id);
+    }
+    
+    component_function(id);
+  });
 }
